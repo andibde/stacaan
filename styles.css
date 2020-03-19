@@ -1,0 +1,190 @@
+.html {
+  overflow-x:hidden;
+}
+.body {
+  background-color: #0D0D0D;
+
+  }
+.container{
+    height: 300px;
+    width: 100%;
+
+}
+
+/** Thin */
+@font-face {
+  font-family: "SF Display";
+  font-weight: 300;
+  src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
+}
+
+.navigationBar {
+	font-family: "SF Display";
+	font-size: 19px;
+	text-align: center;
+	line-height: 84px;
+	height: 64px;
+	color: #FFF;
+	background-color: #181818;
+	border-bottom: #333333 solid thin;
+}
+
+
+.tabBar
+{
+	color: #FFF;
+	position:absolute;
+	bottom:0;
+	max-width: 414px;
+	max-height:60px;
+	width: 100%;
+	height: auto;
+	line-height: 40px;
+	background: #181818;
+}
+.tabBar ul
+{
+	background-image: url(file:///C:/Users/Andi/Desktop/Stopwatch%20Tutorial/new/tabBar.png);
+	background-repeat: no-repeat;
+	background-size:contain;
+	list-style-type: none;
+  margin-top: auto;
+    text-align: center;
+   
+}
+.strips
+{
+    text-align: center;
+    align-items: center;
+    margin-top: auto;
+    
+}
+.tabBar li
+{
+	display: inline-block;
+	width: auto;
+	height: 45px;
+  text-align: center;
+  margin: auto;
+}
+.tabBar li.active
+{
+	color: #ff9500
+}
+#NEW_TIME{
+    width: 100%;
+    font-size: 90px;
+    text-align: center;
+    margin: 70px auto;
+    color: white;
+    font-family: "SF Display";
+}
+
+.buttons{
+    text-align: center;
+    margin: 5%;
+    font-family: "SF Display";
+}
+
+.scrt{
+	text-align: center;
+}
+
+
+.button_red {
+  background-color: black;
+  color: white;
+  padding: 7px 20px;
+  padding-top: 3%;
+  padding-left: 4%;
+  margin-left: -2%;
+}
+
+.button_black {
+  background-color: black;
+  color: white;
+  padding: 7px 20px;
+  padding-top: 3%;
+  padding-left: 4%;
+  margin-left: -2%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #000000;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 1px 16px;
+  background-color: #000000;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
