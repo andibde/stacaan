@@ -154,14 +154,33 @@
 </div>
 <div class="tabBar" style="height: 90.364px;">
   <ul style="background-image: url(tabBar.png);">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li style="color:#0D0D0D;" id="worldclock">Set</li>
   </ul>
 </div>
     </div>
+	<div id="myModal2" class="modal">
+
+    <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <h3>Settings</h3>
+
+      <label for="stack">Choose a stack:</label>
+
+        <select name="stacks" id="stack">
+          <option value="mnemonica">Mnemonica</option>
+          <option value="aronson">Aronson</option>
+          <option value="eightkings">Eight Kings</option>
+          <option value="stebbins">Stebbins</option>
+          <option value="newdeckorder">New Deck Order</option>
+      </select>
+    </div>
+
+  </div>
+	
     <script>
 
 			$("button").on('click',function() {
@@ -182,9 +201,11 @@
     <script>
 // Get the modal
 var modal = document.getElementById("myModal");
+var modal = document.getElementById("myModal2");
 
 // Get the button that opens the modal
 var btn = document.getElementById("00");
+var btn = document.getElementById("worldclock");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
